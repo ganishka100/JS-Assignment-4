@@ -1,0 +1,92 @@
+Q1. Create the Example for Logical Operators.
+
+Ans1. Logical operators in JavaScript are used to perform logical operations on Boolean values. These
+ operators are typically used in conditional statements and expressions to make decisions based on the 
+ truthiness or falsiness of values.
+
+Example:- 1. Using Logical AND (&&):
+let isAdult = true;
+let hasLicense = false;
+
+if (isAdult && hasLicense) {
+  console.log("You can drive!");
+} else {
+  console.log("You cannot drive.");
+}
+
+2. Using Logical OR (||):
+let isWeekend = false;
+let hasVacation = true;
+
+if (isWeekend || hasVacation) {
+  console.log("It's time to relax!");
+} else {
+  console.log("Back to work!");
+}
+
+3. Using Logical NOT (!):
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Please log in to access the content.");
+}
+
+-------------------------------------------------------------------------------------------
+Q2. Difference between “ == “ and “ === “ operators.
+
+Ans2. == (Equality Operator):
+The == operator checks for equality after performing type coercion if necessary. This means that it 
+converts the operands to the same type before making the comparison.
+
+"5" == 5;      // true, because "5" is coerced to the number 5
+null == undefined; // true, because null and undefined are considered equal
+
+=== (Strict Equality Operator):
+The === operator, on the other hand, checks for strict equality without performing type coercion. It 
+compares both the values and the types of the operands. If the types are different, the result is false.
+
+"5" === 5;     // false, because the types are different (string vs. number)
+null === undefined; // false, because the types are different
+
+-------------------------------------------------------------------------------------------
+Q3. How many operators do we have in JS ?
+
+Ans3. JavaScript supports a variety of operators that can be categorized into several types.
+
+1. Arithmetic Operators
+2. Comparison Operators
+3. Logical Operators
+4. Assignment Operators
+5. Bitwise Operators
+6. Unary Operators
+7. Conditional (Ternary) Operator
+8. String Operators
+
+-------------------------------------------------------------------------------------------
+Q4. What is use of parseInt in js?
+
+Ans4. The parseInt function in JavaScript is used to parse a string and convert it into an integer. It
+ takes two arguments: the string to be converted, and an optional argument called the radix, which 
+ represents the numeral system to be used (base of the mathematical numeral system).
+
+ Example:-
+ let numericString = "123";
+let integerValue = parseInt(numericString);
+
+console.log(integerValue); // Output: 123
+
+-------------------------------------------------------------------------------------------
+Q5. Take input from user and find the odd and even number.
+
+Ans5. let num = prompt("Enter any number");
+          num = Number.parseInt(num);
+        
+          if(num%2 == 0){
+            console.log("Even Number");
+          }
+          else{
+            console.log("Odd Number");
+          }
+
+
+
